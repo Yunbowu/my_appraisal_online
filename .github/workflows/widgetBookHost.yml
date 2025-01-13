@@ -1,0 +1,38 @@
+name: flutter web Hosting
+on: push
+
+jobs:
+  widgetbook-cloud-hosting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup flutter
+        uses: subosito/flutter-action@v2
+
+        with:
+          flutter-version: '3.7.10'
+
+
+      - name: Bootstrap App
+        run: |
+            flutter pub get
+
+
+      - name: Build web
+        run: |
+            # 获取当前仓库名称
+            REPO_NAME=${GITHUB_REPOSITORY##*/}
+            flutter pub get
+            flutter build web --release --base-href="/$REPO_NAME/"
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # 部署到 gh-pages 分支
+          folder: build/web # 构建文件存放的位置
+          token: ${{ secrets.GH_TOKEN }}  # 使用自定义的 PAT
+
+
