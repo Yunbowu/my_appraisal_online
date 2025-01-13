@@ -9,7 +9,7 @@ const RESOURCES = {
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "assets/assets/data/%25E6%25B5%258B%25E8%25AF%2595%25E6%2595%25B0%25E6%258D%25AE.json": "03e5fae0fc5414eec6490162ddbe43fc",
 "assets/assets/data/appraisals.json": "03e5fae0fc5414eec6490162ddbe43fc",
-"assets/NOTICES": "486c2b79c2d7b9d613c85da5583bf983",
+"assets/NOTICES": "7f542f176971347644374a20beb98b33",
 "assets/AssetManifest.json": "1e5304707da4190ea5c5eb3be6b4982c",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
