@@ -14,10 +14,10 @@ class WidgetbookApp extends StatelessWidget {
     return Widgetbook.material(
       directories: [
         WidgetbookCategory(
-          name: 'Pages',
+          name: '参考widget 和 数据格式',
           children: [
             WidgetbookComponent(
-              name: 'MyAppraisalPage',
+              name: '线上鉴定',
               useCases: [
                 WidgetbookUseCase(
                   name: 'Default',
@@ -26,7 +26,7 @@ class WidgetbookApp extends StatelessWidget {
               ],
             ),
             WidgetbookComponent(
-              name: 'AppraisalDetailPage',
+              name: '鉴定详情页',
               useCases: [
                 WidgetbookUseCase(
                   name: 'Default',
@@ -35,7 +35,7 @@ class WidgetbookApp extends StatelessWidget {
               ],
             ),
             WidgetbookComponent(
-              name: 'DataFormatPage',
+              name: '参考数据格式',
               useCases: [
                 WidgetbookUseCase(
                   name: 'Default',
